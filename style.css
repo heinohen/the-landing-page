@@ -1,0 +1,172 @@
+
+
+html, body { 
+    min-height: 100%; 
+    margin: 0;
+}
+
+button {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.ylarivi, .kuvallinen, .laatikko, .lainaus, .liity{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.kontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.ylapalkki {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.ylarivi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ylavasen {
+    font-size: 24px;
+    color: #F9FAF8;
+
+}
+
+.ylalinkit {
+    color: #e5e7eb;
+}
+
+.alarivi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7eb;
+
+}
+
+.ylarivi, .alarivi {
+    height: 70px;
+    background-color: #1f2937;
+}
+
+.kuvallinen {
+    display: flex;
+    background-color: palevioletred;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100%;
+    flex: 1;
+}
+
+.tekstiosa {
+    padding: 0px;
+    margin: 0px;
+    height: 200px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.kuvaosa {
+    height: 200px;
+    width: 300px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.laatikko {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.neliot {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+
+  
+}
+
+.nelio {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lainaus {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.lainaus_leipa {
+    font-style: italic;
+    font-size: 25px;
+    font-weight: lighter;
+    color: aqua;
+}
+
+.liity {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.liity_laatikko {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liity_otsikko {
+    color: red;
+    font-size: 30px;
+}
+
+.liity_leipa {
+    color: yellow
+}
+
+
+
+
+
+
+
+
