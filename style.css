@@ -3,14 +3,18 @@
 html, body { 
     min-height: 100%; 
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button {
-    background-color: red;
-    border-radius: 10px;
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #e5e7eb;
 }
 
-.ylarivi, .kuvallinen, .laatikko, .lainaus, .liity{
+
+
+.toprow, .main, .box, .quote, .join{
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -19,9 +23,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
 }
-.ylapalkki {
+.topbar {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -29,7 +32,7 @@ button {
     list-style: none;
 }
 
-.ylarivi {
+.toprow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -37,17 +40,14 @@ button {
 
 }
 
-.ylavasen {
+.topleft {
     font-size: 24px;
     color: #F9FAF8;
 
 }
 
-.ylalinkit {
-    color: #e5e7eb;
-}
 
-.alarivi {
+.bottomrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,29 +55,44 @@ button {
 
 }
 
-.ylarivi, .alarivi {
+.toprow, .bottomrow {
     height: 70px;
     background-color: #1f2937;
 }
 
-.kuvallinen {
+.main {
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
-    background-color: palevioletred;
+    background-color: lightpink;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px;
     height: 100%;
     flex: 1;
 }
 
-.tekstiosa {
+.main_text {
     padding: 0px;
     margin: 0px;
     height: 200px;
+    
+}
+
+.main_button {
+    background-color: lightpink;
+}
+
+.main_button:hover {
+    background-color: aquamarine;
+}
+
+.main_bread {
+    width: 400px;
+    flex-wrap: wrap;
     font-family:Arial, Helvetica, sans-serif
 }
 
-.kuvaosa {
+.main_pic {
     height: 200px;
     width: 300px;
     background-color: gray;
@@ -88,8 +103,8 @@ button {
 
 }
 
-.laatikko {
-    background-color: aquamarine;
+.box {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +112,12 @@ button {
     padding: 30px;
 }
 
-.neliot {
+.box_header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.squares {
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -108,19 +128,19 @@ button {
   
 }
 
-.nelio {
+.sqr {
     height: 100px;
     width: 100px;
     border-style: solid;
     border-radius: 10px;
-    border-color: rebeccapurple;
+    border-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.lainaus {
-    background-color: green;
+.quote {
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,24 +149,24 @@ button {
     padding-bottom: 50px;
 }
 
-.lainaus_leipa {
+.quote_bread {
     font-style: italic;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: lighter;
-    color: aqua;
+    color: black;
 }
 
-.liity {
+.join {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.liity_laatikko {
+.join_box {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: blue;
+    background-color: lightskyblue;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -154,14 +174,37 @@ button {
     align-items: center;
 }
 
-.liity_otsikko {
-    color: red;
-    font-size: 30px;
+.join_header {
+    color: black;
+    font-size: 20px;
 }
 
-.liity_leipa {
-    color: yellow
+.join_bread {
+    color: gray;
+    font-size: 15px;
 }
+
+button {
+    
+    border: none;
+    text-decoration: none;
+    padding: 15px 20px;
+    border: solid;
+    border-width: 1px;
+    transition-duration: 0.4s;
+    
+}
+
+.join_button {
+    background-color: lightskyblue;
+}
+
+
+.join_button:hover {
+    background-color: greenyellow;
+
+}
+
 
 
 
